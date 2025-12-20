@@ -152,9 +152,6 @@ If relevant information is not found in the document corpus, the system explicit
 
 ---
 
-## 👤 Author
-
-**Hamza**
 ScholarRAG – Retrieval-Augmented Research Assistant
 
 
