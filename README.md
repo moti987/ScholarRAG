@@ -32,34 +32,34 @@ ScholarRAG follows a retrieval-augmented generation pipeline.
 │   Research Papers    │
 │   (PDF Documents)    │
 └─────────┬────────────┘
-│
-▼
+          │
+          ▼
 ┌──────────────────────┐
 │  Document Chunking   │
 │  & Preprocessing     │
 └─────────┬────────────┘
-│
-▼
+          │
+          ▼
 ┌──────────────────────┐
 │  Text Embeddings     │
 │  (Sentence-Transformers)
 └─────────┬────────────┘
-│
-▼
+          │
+          ▼
 ┌──────────────────────┐
 │  FAISS Vector Store  │
 │  (Semantic Index)    │
 └─────────┬────────────┘
-│
-User Query
-│
-▼
+          │
+      User Query
+          │
+          ▼
 ┌──────────────────────┐
 │ Query Embedding      │
 │ & Similarity Search  │
 └─────────┬────────────┘
-│
-▼
+          │
+          ▼
 ┌──────────────────────┐
 │ Retrieved Context    │
 │ (Top-K Chunks)       │
@@ -70,8 +70,8 @@ User Query
 │  LLM (Groq – LLaMA)  │
 │  Grounded Generation │
 └─────────┬────────────┘
-│
-▼
+          │
+          ▼
 ┌──────────────────────┐
 │ Answer + Citations   │
 │ (Paper · Page No.)   │
