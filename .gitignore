@@ -1,0 +1,17 @@
+# Virtual environment
+BDAproj/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Vector database (large, machine-specific)
+vectorstore/db_faiss/
+
+# OS files
+.DS_Store
+Thumbs.db
