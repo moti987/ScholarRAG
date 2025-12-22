@@ -126,8 +126,8 @@ ScholarRAG/
 ## 🚀 How to Run
 
 ```bash
-python -m venv BDAproj
-BDAproj\Scripts\activate
+python -m venv ScholarRAG
+ScholarRAG\Scripts\activate
 pip install streamlit groq langchain langchain-community faiss-cpu sentence-transformers
 python create_knowledge_base.py
 streamlit run app.py
