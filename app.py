@@ -141,7 +141,12 @@ def load_db():
         model_name="sentence-transformers/all-MiniLM-L6-v2",
         model_kwargs={"device": "cpu"},
     )
-    return FAISS.load_local("vectorstore/db_faiss", embeddings)
+    return FAISS.load_local(
+        "vectorstore/db_faiss",
+        embeddings,
+        allow_dangerous_deserialization=True
+    )
+
 
 db = load_db()
 retriever = db.as_retriever(search_kwargs={"k": 4})
