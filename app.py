@@ -141,11 +141,17 @@ def load_db():
         model_name="sentence-transformers/all-MiniLM-L6-v2",
         model_kwargs={"device": "cpu"},
     )
-    return FAISS.load_local(
-        "vectorstore/db_faiss",
-        embeddings,
-        allow_dangerous_deserialization=True
-    )
+
+    try:
+        # Newer LangChain (Streamlit Cloud) needs this
+        return FAISS.load_local(
+            "vectorstore/db_faiss",
+            embeddings,
+            allow_dangerous_deserialization=True
+        )
+    except TypeError:
+        # Older LangChain (your local environment) doesn't support the flag
+        return FAISS.load_local("vectorstore/db_faiss", embeddings)
 
 
 db = load_db()
