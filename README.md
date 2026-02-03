@@ -26,6 +26,9 @@ This reduces hallucinations and ensures transparency, making the system suitable
 
 ScholarRAG follows a retrieval-augmented generation pipeline.
 
+<img width="796" height="504" alt="image" src="https://github.com/user-attachments/assets/da00a5b3-93db-40fb-981c-21a0a855db2b" />
+
+
 ```
 
 ┌──────────────────────┐
