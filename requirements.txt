@@ -12,3 +12,5 @@ scikit-learn
 tqdm
 
 groq
+
+langchain_community
